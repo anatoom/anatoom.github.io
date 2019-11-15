@@ -1,0 +1,152 @@
+body {
+font-family: "Roboto";
+font-weight: 700;
+padding-top: 5px;
+padding-left: 35px;
+
+}
+
+h1 {
+padding-bottom: 20px;
+font-family: "Roboto";  
+font-size: 38px; 
+}
+
+
+
+p {
+font-family: "Roboto";
+font-weight: 700;
+}
+
+.legend {
+    display: flex;
+}
+
+.legendtextf {
+    padding-left: 45px;
+    padding-bottom: 15px;
+    color: #FF6666;
+}
+
+.legendtextm {
+    padding-bottom: 15px;
+    color:#0080FF;
+}
+
+
+/* .values {
+text-align: right;
+font-size: 10px;
+} */
+
+.minfoContainer {
+    float: right;
+    position: relative;
+    /* display: inline-block; */
+  }
+
+.minfoContainer .minfoContainerText {
+    visibility: hidden;
+    width: 120px;
+    font-size: 14px;
+    /* background-color: black; */
+    color: black;
+    text-align: right;
+    border-radius: 6px;
+    padding-right: 5px;
+    padding-top: 7px;
+
+  
+    /* Position the tooltip */
+    
+    position: relative;
+    top: -20px;
+    z-index: 1;
+  }
+
+.finfoContainer {
+    float: right;
+    position: relative;
+  }
+
+.finfoContainer .finfoContainerText  {
+    visibility: hidden;
+    width: 120px;
+    font-size: 14px;
+    /* background-color: black; */
+    color: black;
+    text-align: right;
+    border-radius: 6px;
+    padding: 5px 0;
+    padding-right: 5px;
+    padding-top: 7px;
+  
+    /* Position the tooltip */
+    position: relative;
+    top: -20px;
+    z-index: 1;
+  } 
+  
+.mvalues:hover .minfoContainerText {
+    visibility: visible;
+  }
+
+.fvalues:hover .finfoContainerText {
+visibility: visible;
+}
+
+
+
+/* div.mvalues:hover p {
+    display: block;
+}
+
+div.fvalues:hover p {
+    display: block;
+}
+
+div.minfoContainer {
+    color: black;
+    background-color:gray;
+    display: none;
+    top: 500px;
+    right: 500px;
+    position: fixed;
+    z-index: 1;
+}
+
+
+p.minfoContainer {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+div.mvalues:hover div.minfoContainer {
+    display: block;
+}  
+
+*/
+
+
+
+
+#chart_div {
+    display: grid;
+    font-family: "Roboto";
+    /*grid-auto-columns: 1fr;
+    grid-auto-flow: column;*/
+    grid-template-columns: max-content 1fr;
+    grid-column-gap: 20px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+
+.chart-bar {
+    display: flex;
+    flex-direction: column;
+    margin-right: 300px;
+}
