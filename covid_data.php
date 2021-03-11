@@ -31,5 +31,4 @@ data({"LastStatisticsDate":"2021-03-10","StatisticsDate":"2021-03-10","Country":
 {"LastStatisticsDate":"2021-03-10","StatisticsDate":"2021-03-10","Country":"Tundmatu","CountryEHAK":null,"County":"","CountyEHAK":null,"ResultValue":"N","DailyTests":208,"TotalTests":30488,"DailyCases":208,"TotalCases":30488},
 {"LastStatisticsDate":"2021-03-10","StatisticsDate":"2021-03-10","Country":"Tundmatu","CountryEHAK":null,"County":"","CountyEHAK":null,"ResultValue":"P","DailyTests":21,"TotalTests":1147,"DailyCases":21,"TotalCases":1096},
 {"LastStatisticsDate":"2021-03-10","StatisticsDate":"2021-03-10","Country":"Välismaa","CountryEHAK":null,"County":"","CountyEHAK":null,"ResultValue":"N","DailyTests":152,"TotalTests":16790,"DailyCases":152,"TotalCases":16790},
-{"LastStatisticsDate":"2021-03-10","StatisticsDate":"2021-03-10","Country":"Välismaa","CountryEHAK":null,"County":"","CountyEHAK":null,"ResultValue":"P","DailyTests":17,"TotalTests":760,"DailyCases":14,"TotalCases":688}
-}})
+{"LastStatisticsDate":"2021-03-10","StatisticsDate":"2021-03-10","Country":"Välismaa","CountryEHAK":null,"County":"","CountyEHAK":null,"ResultValue":"P","DailyTests":17,"TotalTests":760,"DailyCases":14,"TotalCases":688}})
