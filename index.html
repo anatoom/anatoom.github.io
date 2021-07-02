@@ -109,8 +109,7 @@ function reset() {
 document.getElementById('info').innerHTML = "";
 }
 
-    var erakond1 = info.filter(d => d.Erakond === "Eesti Keskerakond");
-console.log(erakond1);
+ 
   
    
 function reply_click(clicked_id)
@@ -123,6 +122,9 @@ function reply_click(clicked_id)
        window.myhypedocument.startTimelineNamed('menu_1', myhypedocument.kDirectionForward);
        document.getElementById(clicked_id).style.fill = "red";
        console.log(clicked_id);
+	       
+var erakond1 = data.filter(d => d.Erakond === "Eesti Keskerakond");
+console.log(erakond1);
        
    
 
