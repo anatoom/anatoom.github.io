@@ -1,31 +1,173 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Assignment</title>
-        <link href="style.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-<title>Foreign Population in Finland</title>
-    </head>
+  <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge" />
+	<title>index</title>
+	<style>
+		html {
+			height:100%;
+		}
+		body {
+			background-color:#FFF;
+			margin:0;
+			height:100%;
+		}
+	</style>
+	<!-- copy these lines to your document head: -->
 
-    <h1>Foreign Population in Finland</h1>
-    <div class="mlegendbox"></div>
-<div class="legend"><p class="legendtextm">Males</p>
-    <p class="legendtextf">Females</p>
+	<meta name="viewport" content="user-scalable=yes, width=1000" />
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="index.hyperesources/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="index.hyperesources/papaparse.js"></script>
 
-</div>
-    <div class="flegendbox"></div>
+
+<style type="text/css">
+
+p {
+font-family: Roboto Condensed;
+font-size: 18px;
+margin-top: 0px;
+}
+
+.pk {
+font-family: Roboto Condensed;
+font-size: 34px;
+margin-top: 0px;
+}
+
+.menu {
+font-family: Roboto Condensed;
+font-size: 14px;
+line-height: 16px;
+margin-top: 0px;
+}
+
+
+	.st0 {
+	fill: #A7A9AC;
+	stroke: #FFFFFF;
+	stroke-width: 0.5;
+	stroke-linecap:round;
+	stroke-linejoin:round;
+	}
+	
+	.st0:hover {
+	fill: #6699CC !important;
+	}
+
+</style>	
+
+<script>
+
+
+
+  function parseData(url, callBack) {
+    Papa.parse(url, {
+      download: true,
+      header: true,
+      dynamicTyping: true,
+      complete: function(results) {
+        callBack(results.data);
+        window.info = results.data;
+      }
+    });
+  }
+  parseData("https://woodwing.delfi.ee/videos/toom/kovtest/andmed.csv", run);
+
+  function run(data) {
+    window.data = data;
+  }
+
+
+
+
+
+
+
+	function myCallback(hypeDocument, element, event) {
+	window.myhypedocument = hypeDocument;
+	}
+
+	if("HYPE_eventListeners" in window === false) {
+	window.HYPE_eventListeners = Array();
+	}
+	
+	window.HYPE_eventListeners.push({"type":"HypeDocumentLoad", "callback":myCallback});
+
+
+function narvajoesuu() {
+document.getElementById('info').innerHTML = "Narva-Jõesuu linn";
+}	
+
+function torva() {
+document.getElementById('info').innerHTML = "Tõrva vald";
+}
+
+function reset() {
+document.getElementById('info').innerHTML = "";
+}
+
+
+  
    
-    <body>
+function reply_click(clicked_id)
+       {	
+       for (i = 0; i <= 78; i++) {
+       document.getElementById("vald" + i).style.fill = "#A7A9AC";
+       console.log("map reset");
+       }
+       
+       window.myhypedocument.startTimelineNamed('menu_1', myhypedocument.kDirectionForward);
+       document.getElementById(clicked_id).style.fill = "red";
+       console.log(clicked_id);
+       
+       var erakond1 = data.filter(d => d.Erakond === "Eesti Keskerakond");
+console.log(erakond1);
+
+       }
+     
+    
+    
+  
 
 
-<div id="chart_div"></div>
+  
+  
 
 
 
+</script>	
+	
 
-        <script src="https://unpkg.com/papaparse@latest/papaparse.min.js"></script>
-        <script src="script.js"></script>
-    </body>
+	<!-- end copy -->
+  </head>
+  <body>
+	<!-- copy these lines to your document: -->
+
+	<div id="index_hype_container" class="HYPE_document" style="margin:auto;position:relative;width:100%;height:100%;overflow:hidden;">
+		<script type="text/javascript" charset="utf-8" src="index.hyperesources/index_hype_generated_script.js?37435"></script>
+	</div>
+
+	<!-- end copy -->
+	
+
+
+	<!-- text content for search engines: -->
+
+	<div style="display:none" aria-hidden=true>
+
+		<div>Eesti Reformierakondnr 101 PEEP KASK
+</div>
+		<div></div>
+		<div></div>
+		<div>Kohalikud valimised 2021
+</div>
+
+	</div>
+
+	<!-- end text content: -->
+
+  </body>
 </html>
-
