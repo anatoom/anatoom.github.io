@@ -164,6 +164,19 @@ setBackgroundImageSafely(grayBox, imagePath, 'photos/error.jpg');
             document.body.appendChild(container);
         })
         .catch(error => console.error('Error fetching the CSV file:', error));
+
+
 	
+  function sendHeight() {
+    const height = document.documentElement.scrollHeight;
+    parent.postMessage({ type: 'resize-iframe', height }, '*');
+  }
+
+  window.addEventListener('load', sendHeight);
+  window.addEventListener('resize', sendHeight);
+
+  // Optional: For dynamic changes (like popups), keep sending height
+  setInterval(sendHeight, 500); // Replace with MutationObserver for better performance
+
 	
 });
