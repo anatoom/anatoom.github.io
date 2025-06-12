@@ -1,0 +1,243 @@
+
+
+
+p {
+	
+    font-family: Inter;
+  
+    }
+    
+
+.pk {
+	
+    font-family: Inter;
+        font-size:60px;
+        text-align:center;
+        font-weight:900;
+        margin-bottom:30px;
+	
+    }
+    
+    .container {
+    
+        display: flex;
+        flex-wrap: wrap;
+		   justify-content: center;
+    }
+    
+    .popup {
+        position: fixed;
+        width: 418px;
+        height: 430px;
+        background-color: white;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        display: none;
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    .close-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+		 width: 22px;
+        height: 22px;
+        background-image: url('img/x.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    .popup-content {
+     
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 12px;
+    }
+    
+    .popup-gray-box {
+        width: 130px;
+        height: 182px;
+        background-color: gray;
+        margin-right: 12px;
+    }
+    
+   .popup-text-container {
+        font-family: Inter;
+		margin-top:130px;
+        display: block;
+        max-width: 250px;
+        font-size:12px;
+		line-height:18px;
+        flex-direction: column;
+        align-items: flex-start;
+        word-wrap: break-word;
+    }
+    
+ 
+    
+ 
+    
+    .cv-div {
+        margin-top: 0px;
+        font-family: Inter;
+        font-size:12px;
+		line-height:18px;
+		height:225px;
+		 overflow: auto;
+		 padding-right: 10px;
+    }
+    
+
+    .left-arrow {
+        left: 18px;
+        position: absolute;
+        top: 40%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        width: 12px;
+        height: 22px;
+        background-image: url('img/v.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .right-arrow {
+        right: 16px;
+        position: absolute;
+        top: 40%;
+        transform: translateY(-50%);
+        cursor: pointer;
+		 width: 12px;
+        height: 22px;
+        background-image: url('img/p.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }  
+    
+    .item-div {
+        width: 130px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .gray-box {
+        width: 130px;
+        height: 182px;
+        background-color: gray;
+    }
+
+.portrait-image {
+    width: 130px;
+    height: 182px;
+    object-fit: cover;
+}
+    
+    .text-container {
+        font-family: Inter;
+        font-size:12px;
+		line-height:18px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .nameDiv {
+        font-family: Inter;
+        font-size:16px;
+		font-weight:600;
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+    }
+
+   .popup-name-div {
+        font-family: Inter;
+        font-size:16px;
+    }
+
+
+    .ametDiv {
+margin-top:4px;
+font-family: Inter;
+line-height:16px;
+display: flex;
+flex-direction: column;
+align-items: center;
+    }
+
+
+   .popup-amet-div {
+   margin-top:2px;
+    }
+
+    .dateDiv {
+margin-top:2px;
+font-family: Inter;
+line-height:18px;
+display: flex;
+flex-direction: column;
+align-items: center;
+    }
+
+   .popup-date-div {
+   margin-top:2px;
+    }
+
+
+
+@media screen and (max-width: 600px) {
+  
+    .pk {
+	
+        font-family: Inter;
+            font-size:30px;
+            text-align:center;
+            font-weight:900;
+            margin-bottom:30px;
+        
+        }
+	
+	 .popup {
+    
+        width: 200px;
+   
+    }
+	
+	      .popup-content {
+            flex-direction: column;
+            align-items: left;
+        }
+        
+        .popup-text-container {
+            margin-top: 10px;
+            max-width: 100%;
+            text-align: left;
+        }
+  
+
+}
+
+@media screen and (max-width: 400px) {
+
+   .item-div {
+      
+        margin: 5px;
+   
+    }
+	
+
+    
+	   }
+    
