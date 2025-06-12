@@ -166,15 +166,4 @@ setBackgroundImageSafely(grayBox, imagePath, 'photos/error.jpg');
         .catch(error => console.error('Error fetching the CSV file:', error));
 	
 	
-function sendHeight() {
-  const height = document.body.scrollHeight;
-  parent.postMessage({ type: 'resize-iframe', height }, '*');
-}
-
-window.addEventListener('load', sendHeight);
-window.addEventListener('resize', sendHeight);
-
-// Optional: if your content changes dynamically (e.g. popups open)
-setInterval(sendHeight, 500); // or use a MutationObserver for better perf
-	
 });
