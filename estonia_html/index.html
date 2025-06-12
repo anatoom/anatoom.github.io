@@ -18,7 +18,21 @@
 	
 <div class="pk">Estonia hukkunud <br>meeskonnaliikmed</div>
 	
-	    <script src="script.js"></script>   
+	    <script src="script.js"></script>
+
+	<script>
+  function sendHeight() {
+    const height = document.documentElement.scrollHeight;
+    parent.postMessage({ type: 'resize-iframe', height }, '*');
+  }
+
+  window.addEventListener('load', sendHeight);
+  window.addEventListener('resize', sendHeight);
+
+  // Optional: For dynamic changes (like popups), keep sending height
+  setInterval(sendHeight, 500); // Replace with MutationObserver for better performance
+</script>
+
 </body>
 </html>
 
